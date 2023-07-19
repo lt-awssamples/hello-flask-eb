@@ -1,0 +1,10 @@
+version: 1.0
+runtime: python3 
+build:
+  commands:
+    build:
+      - pip install -r requirments.txt
+run: 
+  network: 
+    port: 5000
+  command: python app.py
